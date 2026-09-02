@@ -10,6 +10,8 @@ public class ArrayLists{
         
         lista.add(new Persona("apellido", "domicilio", 5, "nombre", "telefono"));
 
+        lista.remove(1);
+
         for (int i=0; i<lista.size(); i++){
             System.out.println(lista.get(i).getNombre());
         }
