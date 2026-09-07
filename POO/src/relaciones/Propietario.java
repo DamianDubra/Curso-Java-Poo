@@ -1,9 +1,11 @@
 package relaciones;
 
+
 public class Propietario {
     private Long id;
     private String nombre;
     private String apellido;
+    
 
     public Propietario() {
     }
@@ -36,6 +38,17 @@ public class Propietario {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Propietario{");
+        sb.append("id=").append(id);
+        sb.append(", nombre=").append(nombre);
+        sb.append(", apellido=").append(apellido);
+        sb.append('}');
+        return sb.toString();
     }
 
 
