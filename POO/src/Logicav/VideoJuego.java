@@ -18,6 +18,13 @@ public class VideoJuego {
         this.titulo = titulo;
     }
 
+    
+    @Override
+    public String toString() {
+        return "VideoJuego [codigo=" + codigo + ", titulo=" + titulo + ", consola=" + consola + ", cantJugadores="
+                + cantJugadores + ", categoria=" + categoria + "]";
+    }
+
     public int getCodigo() {
         return codigo;
     }
